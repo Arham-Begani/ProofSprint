@@ -12,9 +12,9 @@ Publication preparation was performed after the studio redesign was completed. T
 
 An initial local validation attempt lacked dependencies in the clean copy. Reusing the already installed dependency tree resolved that setup issue; the final suite above passed. Dependencies themselves are not published.
 
-## Build limitation
+## Build
 
-The earlier original local Eve build passed. Two attempts to build this public copy stopped while Eve fetched public AI Gateway metadata for `openai/gpt-6-astra` with `fetch failed`. The public copy's fresh Eve build is therefore **not verified**. Agent configuration was preserved; no credential, model switch or invented metadata was used to bypass this. The directly runnable local web workbench does not require the Eve build, and its HTTP workflow tests passed.
+The fresh bounded Eve build on this public copy **passed**, producing `.output`. It required network access to fetch public AI Gateway model metadata. Earlier restricted-network attempts stopped at that metadata fetch; the successful run used the same source and Astra configuration, one build worker, and `--skip-sandbox-prewarm`. No new credentials, live inference, deployment or invented metadata was used. The directly runnable local web workbench does not require the Eve build, and its HTTP workflow tests also passed.
 
 ## Prior UI verification retained by source identity
 

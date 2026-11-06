@@ -1,0 +1,31 @@
+{
+  "name": "proofsprint",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-led puzzle workflow with independent proposals and explicit review gates",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "start": "node src/cli.mjs",
+    "workbench": "node src/workbench.mjs",
+    "demo": "node src/cli.mjs demo",
+    "validate:public": "node scripts/validate-public.mjs",
+    "check": "node --check src/core.mjs && node --check src/store.mjs && node --check src/cli.mjs && node --check src/team.mjs && node --check src/workbench.mjs && node --check web/app.js",
+    "typecheck": "tsc --noEmit",
+    "agent:build": "eve build --skip-sandbox-prewarm",
+    "agent:dev": "eve dev",
+    "agent:info": "eve info"
+  },
+  "dependencies": {
+    "ai": "7.0.163",
+    "eve": "1.0.0-rc.5",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  }
+}

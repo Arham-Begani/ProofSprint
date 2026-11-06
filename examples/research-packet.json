@@ -1,0 +1,21 @@
+{
+  "id": "fictional-beacons",
+  "version": "1",
+  "title": "Fictional beacon evidence exercise",
+  "mode": "practice",
+  "answerMode": "unique",
+  "text": "This is a synthetic exercise, not the competition puzzle. Among Alder, Birch and Cedar, identify the west-coast beacon commissioned in 1984 and currently 32 metres tall. The candidate list is exhaustive for this exercise. The supplied records are authoritative only inside this fictional exercise.",
+  "constraints": [
+    {"id": "coast", "description": "The beacon is on the west coast."},
+    {"id": "commissioned", "description": "Commissioning occurred in 1984, not merely refurbishment."},
+    {"id": "height", "description": "Current height is 32 metres."},
+    {"id": "unique", "description": "Exactly one of the three listed candidates meets every requirement."}
+  ],
+  "sources": [
+    {"id": "alder-record", "kind": "synthetic", "label": "Fictional Alder record", "origin": "synthetic:alder", "content": "Alder: west coast; commissioned 1984; current height 28 metres."},
+    {"id": "birch-record", "kind": "synthetic", "label": "Fictional Birch record", "origin": "synthetic:birch", "content": "Birch: west coast; commissioned 1984; current height 32 metres."},
+    {"id": "cedar-record", "kind": "synthetic", "label": "Fictional Cedar record", "origin": "synthetic:cedar", "content": "Cedar: west coast; commissioned 1979; refurbished 1984; current height 32 metres."},
+    {"id": "blog-copy-a", "kind": "synthetic", "label": "Fictional copied blog A", "origin": "synthetic:shared-incorrect-blog", "content": "Cedar was commissioned in 1984."},
+    {"id": "blog-copy-b", "kind": "synthetic", "label": "Fictional copied blog B", "origin": "synthetic:shared-incorrect-blog", "content": "Cedar was commissioned in 1984."}
+  ]
+}
